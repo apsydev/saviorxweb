@@ -10,6 +10,14 @@ body {
     height: 100%;
 }
 
+
+@font-face {
+    font-family: 'disturbo'; /*a name to be used later*/
+    src: url('../fonts/Disturbo.ttf'); /*URL to font*/
+}
+
+
+
 body {
     /*font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;*/
     font-family: "Calibre", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,6 +33,22 @@ a#fburl {
 
 .roadmapFont p {
     font-size: 22px;
+}
+
+.roadmapFont {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+    .roadmapFont {
+        display: block;
+    }
 }
 
 hr {
@@ -574,8 +598,9 @@ body {
     display: block;
     color: #494949;
     text-decoration: none;
-    padding: 8px;
-    font-size: 16px;
+    padding: 6px;
+    font-size: 32px;
+    font-family: 'disturbo', serif;
 }
 
 .top-header__navigation-link:hover {
